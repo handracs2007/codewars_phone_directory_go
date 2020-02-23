@@ -88,8 +88,6 @@ func ProcessPhoneMap(dir string) {
 
 			phoneMap[number] = person
 		}
-
-		//fmt.Println(number, name, address)
 	}
 }
 
@@ -103,7 +101,7 @@ func Phone(dir, num string) string {
 
 	if tooMany {
 		return "Error => Too many people: " + num
-	} else if ! exist {
+	} else if !exist {
 		return "Error => Not found: " + num
 	}
 
